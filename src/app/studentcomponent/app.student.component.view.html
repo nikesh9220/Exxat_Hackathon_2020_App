@@ -1,0 +1,15 @@
+<br>
+<div class="container">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th *ngFor="let c of tableColumHeaders">{{c}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of students" (click)="getSelectedStudent(s)">
+                <td *ngFor="let c of tableColumHeaders">{{s[c]}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

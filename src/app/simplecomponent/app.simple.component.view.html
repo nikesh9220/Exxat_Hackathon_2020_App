@@ -1,0 +1,15 @@
+<div>
+    <!--The interpolation aka read-only binding-->
+    <span>{{message}}</span>
+    <!--Property binding-->
+    <hr>
+    <input type="text" [value]="message">
+</div>
+<br>
+<input type="button" value="Display" (click)="display()">
+<br>
+<input type="text" [(ngModel)]="name">
+<br>
+<input type="text" [(ngModel)]="name">
+<br>
+<input type="text" [(ngModel)]="name">
